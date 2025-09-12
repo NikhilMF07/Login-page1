@@ -24,3 +24,19 @@ function toggleSubMenu(button) {
 
 const popoverTrigger = document.getElementById('profilePopover');
 const popover = new bootstrap.Popover(popoverTrigger);
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+event.preventDefault(); 
+
+const empId = document.getElementById('employeeId').value.trim();
+const password = document.getElementById('password').value.trim();
+
+if(empId === '1' && password === '1') {
+
+document.querySelector('.home-section').style.display = 'block';
+
+document.querySelector('.login-container').style.display = 'none';
+} else {
+alert('Invalid Employee ID or Password');
+}
+});

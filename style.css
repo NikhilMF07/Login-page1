@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
     overflow: hidden;
-    /* background: url(bg.jpg); */
+    background: url(bg.jpg);
     background-size: 100%;
     background-repeat: round;
 }
@@ -366,14 +366,14 @@ body {
 .profile-name {
     opacity: 1;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    white-space: nowrap; /* keep text in one line */
+    white-space: nowrap;
     overflow: hidden;
 }
 
 #sidebar.close .profile-name {
     opacity: 0;
-    transform: translateX(-10px); /* subtle slide effect */
-    pointer-events: none; /* disables click/hover during collapse */
+    transform: translateX(-10px);
+    pointer-events: none;
 }
 
 
