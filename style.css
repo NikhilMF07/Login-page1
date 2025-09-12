@@ -207,9 +207,13 @@ body {
     }
     
     .login-section {
-        padding: 1rem;
+        padding: 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         margin-left: 0;
-        margin-top: -30%;
+        width: 100%;
     }
     
     .card-header-custom {
@@ -217,10 +221,12 @@ body {
     }
     .login-container {
         margin-top: -10%;
+        justify-content: center;
     }
     .text-content {
         width: 100%;
         padding: 0 10px;
+        margin-bottom: 35px;
     }
     .text-content img {
         width: 22%;
