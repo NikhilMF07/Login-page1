@@ -360,6 +360,7 @@ body {
   cursor: pointer;
   padding: 10px;
 }
+
 .profile-section:hover {
   background-color: var(--hover-clr);
 }

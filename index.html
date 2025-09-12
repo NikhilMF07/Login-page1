@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <div class="home-section"  style="display: none;">
+    <div class="home-section">
         <nav id="sidebar">
             <ul>
                 <li>
@@ -35,19 +35,6 @@
                 </li>
                 <li>
                     <button onclick=toggleSubMenu(this) class="dropdown-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m438-240 226-226-58-58-169 169-84-84-57 57 142 142ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>
-                        <span>Task</span>
-                        <svg id="toggle-m-btn" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-240 240-480l56-56 144 144v-368h80v368l144-144 56 56-240 240Z"/></svg>
-                    </button>
-                    <ul class="sub-menu">
-                        <div>
-                            <li><a href="#">Update</a></li>
-                            <li><a href="#">Reupdate</a></li>
-                        </div>
-                    </ul>
-                </li>
-                <li>
-                    <button onclick=toggleSubMenu(this) class="dropdown-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M600-160v-280h280v280H600ZM440-520v-280h440v280H440ZM80-160v-280h440v280H80Zm0-360v-280h280v280H80Zm440-80h280v-120H520v120ZM160-240h280v-120H160v120Zm520 0h120v-120H680v120ZM160-600h120v-120H160v120Zm360 0Zm-80 240Zm240 0ZM280-600Z"/></svg>
                         <span>Reports</span>
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-240 240-480l56-56 144 144v-368h80v368l144-144 56 56-240 240Z"/></svg>
@@ -59,6 +46,19 @@
                             <li><a href="#">Dispatch Pending</a></li>
                             <li><a href="#">In Transport</a></li>
                             <li><a href="#">Dispatched</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m438-240 226-226-58-58-169 169-84-84-57 57 142 142ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>
+                        <span>Task</span>
+                        <svg id="toggle-m-btn" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-240 240-480l56-56 144 144v-368h80v368l144-144 56 56-240 240Z"/></svg>
+                    </button>
+                    <ul class="sub-menu">
+                        <div>
+                            <li><a href="#">Update</a></li>
+                            <li><a href="#">Reupdate</a></li>
                         </div>
                     </ul>
                 </li>
@@ -75,8 +75,9 @@
                 data-bs-content='
                     <div style="min-width: 200px;">
                         <strong>Name :</strong> Nikhil K K <br>
-                        <strong>Email :</strong> nikhil@example.com <br>
+                        <strong>Employee ID :</strong> 1524 <br><br>
                         <strong>Role :</strong> Developer <br><br>
+                        <p class="btn btn-sm btn-danger ></p>
                         <button class="btn btn-sm btn-danger w-100">Logout</button>
                     </div>'>
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
@@ -94,7 +95,7 @@
         </main>
     </div>
 
-    <div class="container-fluid p-0 ">
+    <div class="container-fluid p-0 "style="display: none;">
         <div class="row g-0 login-container">
             <div class="text-content pb-3 d-flex align-items-center">
                 <img src="logo-2.png" alt="">
