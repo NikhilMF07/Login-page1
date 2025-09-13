@@ -40,3 +40,21 @@ document.querySelector('.login-container').style.display = 'none';
 alert('Invalid Employee ID or Password');
 }
 });
+
+function logout() {
+    document.querySelector('.home-section').style.display = 'none';
+    document.querySelector('.login-container').style.display = '';
+    
+    document.getElementById('employeeId').value = '';
+    document.getElementById('password').value = '';
+    
+    popover.hide();
+    
+    alert('You have been logged out successfully!');
+}
+
+document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('btn-danger') && event.target.textContent.trim() === 'Logout') {
+        logout();
+    }
+});
