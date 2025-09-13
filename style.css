@@ -71,7 +71,47 @@ body {
     right: 0;
     height: 5px;
 }
+.regi-login-card {
+    background: rgba(0, 0, 0, 0.13);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    max-width: 450px;
+    width: 100%;
+}
 
+.regi-login-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+}
+
+.regi-card-header-custom {
+    background: transparent;
+    border: none;
+    text-align: center;
+    padding: 20px 0;
+    padding-bottom: 0px;
+}
+
+.regi-card-header-custom h2 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.regi-card-header-custom .text-muted {
+    color: #ffffff;
+}
+
+.regi-card-header-custom p {
+    color:  #ffffff;
+    margin-bottom: 0;
+}
 .card-header-custom {
     background: transparent;
     border: none;
@@ -129,10 +169,47 @@ body {
     transform: scale(0.85) translateY(-1.9rem) translateX(0.50rem);
 }
 
-.form-floating>.form-control-plaintext:focus, .form-floating>.form-control-plaintext:not(:placeholder-shown), .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+.form-floating>.form-control-plaintext:focus, .regi-form-floating>.form-control-plaintext:not(:placeholder-shown), .regi-form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
     padding-top: 0;
     padding-bottom: 0px;
 } */
+
+.form-group {
+    position: relative;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.form-input {
+    width: 100%;
+    padding: 11px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    height: 6dvh;
+}
+
+label {
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    color: #999;
+    padding: 0 4px;
+    transition: 0.2s ease all;
+    pointer-events: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.form-input:focus + label,
+.form-input:not(:placeholder-shown) + label {
+    top: -21px;
+    left: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
 
 .btn-login {
     background: #000000;
@@ -236,7 +313,7 @@ body {
 
 #sidebar.close {
     padding: 5px;
-    width: 60px;
+    width: 58px;
 }
 
 #sidebar ul {
@@ -400,6 +477,18 @@ body {
     
     .card-header-custom {
         padding: 2rem 1.5rem 1rem;
+    }
+    .regi-login-card {
+        margin-top: 20%;
+    }
+    .regi-card-header-custom h2 {
+        font-size: 24px;
+    }
+    .regi-card-header-custom p {
+        font-size: 11px;
+    }
+    #registrationForm {
+        font-size: 14px;
     }
     .login-container {
         margin-top: -10%;

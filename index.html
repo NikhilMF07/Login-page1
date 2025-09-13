@@ -95,7 +95,7 @@
         </main>
     </div>
 
-    <div class="container-fluid p-0 ">
+    <div class="container-fluid p-0 " >
         <div class="row g-0 login-container">
             <div class="text-content pb-3 d-flex align-items-center">
                 <img src="logo-2.png" alt="">
@@ -137,12 +137,75 @@
                             </div>
                             
                             <div class="options text-center mb-3">
-                                <a href="#" class="forgot-password" id="forgotPassword">
+                                <a href="#" class="forgot-password" id="signupLink">
                                     Sign Up
                                 </a>
                                 <a href="#" class="forgot-password" id="forgotPassword">
                                     Forgot Password?
                                 </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="registrationContainer" class="container-fluid p-0 pt-4 " style="display: none;">
+        <div class="row g-0 login-container">
+            <div class="text-content pb-2 md-pb-0 d-flex align-items-center">
+                <img src="logo-2.png" alt="">
+                <div class="text p-2 pt-5">
+                    <h2>Maruti Flex Traders LLP</h2>
+                    <p>Let's Grow Business Together</p>
+                </div>
+            </div>
+            <div class="login-section mb-4">
+                <div class="regi-login-card">
+                    <div class="regi-card-header-custom">
+                        <h2 class="mb-2">
+                            <i class="bi bi-person-circle me-2 text-white"></i>
+                            Welcome
+                        </h2>
+                        <p class="text-muted">Employee Registration</p>
+                    </div>
+                    <div class="card-body px-4 pb-1">
+                        <form id="registrationForm">
+
+                            <div class="form-group">
+                                <input type="text" class="form-input" id="name" placeholder=" " />
+                                <label for="name">Full Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-input" id="employeeId" placeholder=" " />
+                                <label for="employeeId">Employee ID</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-input" id="designation" placeholder=" " />
+                                <label for="designation">Designation</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-input" id="number" placeholder=" " />
+                                <label for="number">Phone Number</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-input" id="password" placeholder=" " />
+                                <label for="password">Password</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-input" id="confirmPassword" placeholder=" " />
+                                <label for="password">Confirm Password</label>
+                            </div>
+
+                            <div class="d-grid gap-2 mb-3">
+                                <button type="submit" class="btn btn-primary btn-login">
+                                    <i class="bi bi-box-arrow-in-right me-2"></i>
+                                    Sign Up
+                                </button>
+                            </div>
+                            
+                            <div class="options text-center justify-content-center mb-3 text-white">Do you have already account? 
+                                <a href="#" class="forgot-password" id="forgotPassword"> Log in</a>
                             </div>
                         </form>
                     </div>
