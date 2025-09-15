@@ -395,6 +395,14 @@ label {
 #sidebar .sub-menu.show {
     grid-template-rows: 1fr;
 }
+
+nav ul li.active,
+nav ul li a.active {
+    background-color: #e0e0e012;
+    font-weight: bold;
+    border-radius: 19px;
+}
+
 .dropdown-btn svg {
     transition: 200ms ease;
 }

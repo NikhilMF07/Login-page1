@@ -23,13 +23,13 @@
                     </button>
                 </li>
                 <li class="active">
-                    <a href="#">
+                    <a href="#" onclick="showContent('home-content')" data-target="home-content">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
                         <span>Home</span>
                     </a>
                 </li>
-                <li class="active">
-                    <a href="#">
+                <li class="">
+                    <a href="#" onclick="showContent('request-content')" data-target="request-content">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h168q13-36 43.5-58t68.5-22q38 0 68.5 22t43.5 58h168q33 0 56.5 23.5T840-760v268q-19-9-39-15.5t-41-9.5v-243H200v560h242q3 22 9.5 42t15.5 38H200Zm0-120v40-560 243-3 280Zm80-40h163q3-21 9.5-41t14.5-39H280v80Zm0-160h244q32-30 71.5-50t84.5-27v-3H280v80Zm0-160h400v-80H280v80Zm200-190q13 0 21.5-8.5T510-820q0-13-8.5-21.5T480-850q-13 0-21.5 8.5T450-820q0 13 8.5 21.5T480-790ZM720-40q-83 0-141.5-58.5T520-240q0-83 58.5-141.5T720-440q83 0 141.5 58.5T920-240q0 83-58.5 141.5T720-40Zm-20-80h40v-100h100v-40H740v-100h-40v100H600v40h100v100Z"/></svg>
                         <span>New Request</span></a>
                 </li>
@@ -41,11 +41,11 @@
                     </button>
                     <ul class="sub-menu">
                         <div>
-                            <li><a href="#">All PI</a></li>
-                            <li><a href="#">Pending PI</a></li>
-                            <li><a href="#">Dispatch Pending</a></li>
-                            <li><a href="#">In Transport</a></li>
-                            <li><a href="#">Dispatched</a></li>
+                            <li><a href="#" onclick="showContent('report-content')" data-target="report-content">All PI</a></li>
+                            <li><a href="#" onclick="showContent('report-content')" data-target="report-content">Pending PI</a></li>
+                            <li><a href="#" onclick="showContent('report-content')" data-target="report-content">Dispatch Pending</a></li>
+                            <li><a href="#" onclick="showContent('report-content')" data-target="report-content">In Transport</a></li>
+                            <li><a href="#" onclick="showContent('report-content')" data-target="report-content">Dispatched</a></li>
                         </div>
                     </ul>
                 </li>
@@ -57,8 +57,8 @@
                     </button>
                     <ul class="sub-menu">
                         <div>
-                            <li><a href="#">Update</a></li>
-                            <li><a href="#">Reupdate</a></li>
+                            <li><a href="#" onclick="showContent('task-content')" data-target="task-content">Update</a></li>
+                            <li><a href="#" onclick="showContent('task-content')" data-target="task-content">Reupdate</a></li>
                         </div>
                     </ul>
                 </li>
@@ -87,11 +87,37 @@
             </div>
         </nav>
 
-        <main>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iste 
-                necessitatibus facere quasi minima enim repudiandae distinctio. 
-                Magnam, beatae sequi! Repudiandae voluptate velit nostrum, 
-                expedita illo sed ad ab id!</p>
+        <main class="content">
+            <div class="container home-content" id="home-content">
+                <h1>Home Content</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, quibusdam.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Dignissimos earum doloremque quidem commodi dolores enim, 
+                    dolorem voluptates ab laboriosam? Ut.</p>
+            </div>
+
+            <div class="container home-content" id="request-content">
+                <h1>Request Content.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Dignissimos earum doloremque quidem commodi dolores enim, 
+                    dolorem voluptates ab laboriosam? Ut.</p>
+            </div>
+
+            <div class="container home-content" id="report-content">
+                <h1>Report Content</h1>
+                <p>Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     In dolorum culpa praesentium perferendis corrupti voluptatibus neque 
+                     tempore distinctio? Ratione, vel. sit amet consectetur, adipisicing elit. 
+                    Dignissimos earum doloremque quidem commodi dolores enim, 
+                    dolorem voluptates ab laboriosam? Ut.</p>
+            </div>
+
+            <div class="container home-content" id="task-content">
+                <h1>Task Content</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Dignissimos earum doloremque quidem commodi dolores enim, 
+                    dolorem voluptates ab laboriosam? Ut.</p>
+            </div>
         </main>
     </div>
 

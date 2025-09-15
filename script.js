@@ -48,7 +48,7 @@ if(empId === '1' && password === '1') {
     // Store login status
     localStorage.setItem('isLoggedIn', 'true');
 
-    document.querySelector('.home-section').style.display = 'block';
+    document.querySelector('.home-section').style.display = '';
     document.querySelector('.login-container').style.display = 'none';
 } else {
     alert('Invalid Employee ID or Password');
@@ -80,7 +80,7 @@ window.addEventListener('DOMContentLoaded', function () {
     const isLoggedIn = localStorage.getItem('isLoggedIn');
 
     if (isLoggedIn === 'true') {
-        document.querySelector('.home-section').style.display = 'block';
+        document.querySelector('.home-section').style.display = '';
         document.querySelector('.login-container').style.display = 'none';
     }
 });
@@ -96,4 +96,33 @@ document.querySelector('#registrationContainer .options a').addEventListener('cl
 
     document.getElementById('registrationContainer').style.display = 'none';
     document.querySelector('.login-container').style.display = '';
+});
+
+let hasNavigated = false;
+
+function showContent(contentId) {
+    const sections = document.querySelectorAll('.home-content');
+    sections.forEach(section => section.style.display = 'none');
+
+    const selectedSection = document.getElementById(contentId);
+    if (selectedSection) {
+        selectedSection.style.display = 'block';
+    }
+
+    const navLinks = document.querySelectorAll("nav ul li");
+    navLinks.forEach(link => link.classList.remove("active"));
+
+    const matchingNav = document.querySelector(`[data-target="${contentId}"]`);
+    if (matchingNav) {
+        matchingNav.parentElement.classList.add("active");
+    }
+    if (hasNavigated) {
+        toggleSidebar();
+    } else {
+        hasNavigated = true;
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showContent('home-content');
 });
